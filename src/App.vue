@@ -1,16 +1,10 @@
 <template>
   <v-app>
-    <v-app-bar app>
-      <v-toolbar-title class="headline">
-        <h2>Message</h2>
-      </v-toolbar-title>
-    </v-app-bar>
-
     <v-content>
-      <router-view/>
+      <router-view />
     </v-content>
     <v-layout>
-      <v-dialog v-model="dialog" persistent width="800" >
+      <v-dialog v-model="dialog" persistent width="800">
         <v-card>
           <v-card-title class="headline grey lighten-2" primary-title>
             Training Info
@@ -25,11 +19,7 @@
 
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn
-              color="primary"
-              text
-              @click="dialog = false"
-            >
+            <v-btn color="primary" text @click="dialog = false">
               I accept
             </v-btn>
           </v-card-actions>
@@ -40,9 +30,8 @@
 </template>
 
 <script>
-
 export default {
-  name: 'App',
+  name: "App",
   data: () => ({
     dialog: false,
   }),

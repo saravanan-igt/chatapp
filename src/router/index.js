@@ -11,7 +11,11 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
+      redirect: { name: 'list' }
+    },
+    {
+      path: '/list',
+      name: 'list',
       component: Hello
     },
     {
