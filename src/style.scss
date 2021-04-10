@@ -73,7 +73,7 @@
                     }
                     &.right-msg {
                         background: #E1EDFB;
-                        margin-left: 60px;
+                        margin-left: 15%;
                         &:after {
                             border-top: 8px solid transparent;
                             border-bottom: 8px solid transparent;
@@ -83,7 +83,7 @@
                     }
                     &.left-msg {
                         background: #F2F2F2;
-                        margin-right: 60px;
+                        margin-right: 15%;
                         &:after {
                             border-top: 8px solid transparent;
                             border-bottom: 8px solid transparent;
@@ -94,6 +94,7 @@
                 }
                 .user-msg-text {
                     padding: 10px;
+                    margin-bottom: 0;
                 }
             }
         }

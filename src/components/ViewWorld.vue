@@ -14,7 +14,7 @@
       </v-btn>
     </v-app-bar>
     <v-container fluid class="chat-message-area">
-      <v-row>
+      <v-row no-gutter>
         <v-col cols="10" xs="10">
           <v-card outlined class="chat-bubble task-msg">
             <v-list-item three-line>
@@ -42,7 +42,7 @@
         </v-col>
       </v-row>
 
-      <v-row>
+      <v-row no-gutter>
         <v-col cols="10" xs="10">
           <v-card outlined class="chat-bubble user-msg right-msg">
             <p class="user-msg-text">Hello，please deal with this task.</p>
@@ -55,7 +55,7 @@
         </v-col>
       </v-row>
 
-      <v-row>
+      <v-row no-gutter>
         <v-col cols="2" xs="2">
           <v-avatar>
             <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
