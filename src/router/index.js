@@ -4,6 +4,8 @@ import Hello from '@/components/HelloWorld';
 import ViewHello from '@/components/ViewWorld';
 import Details from '@/components/Details';
 import StaffList from '@/components/StaffList';
+import SearchChat from '@/components/SearchChat';
+import Groups from '@/components/Groups';
 
 Vue.use(Router);
 
@@ -34,8 +36,17 @@ export default new Router({
       path: '/staffList',
       name: 'StaffList',
       component: StaffList
-    }
-
+    },
+    {
+      path: '/searchChat',
+      name: 'SearchChat',
+      component: SearchChat
+    },
+    {
+      path: '/groups',
+      name: 'Groups',
+      component: Groups
+    },
     
   ]
 });

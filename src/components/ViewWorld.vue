@@ -70,16 +70,29 @@
     </v-container>
 
     <v-footer padless class="messaging-footer">
-      <v-btn fab color="primary" x-small dark>
-        <v-icon>mdi-access-point</v-icon>
-      </v-btn>
-      <v-text-field outlined></v-text-field>
-      <div>
-        <v-btn icon color="primary">
-          <v-icon>mdi-emoticon-happy-outline</v-icon>
+      <div class="chat-field">
+        <v-btn fab color="primary" x-small dark>
+          <v-icon>mdi-access-point</v-icon>
         </v-btn>
-        <v-btn icon color="primary">
-          <v-icon>mdi-plus-circle-outline</v-icon>
+        <v-text-field outlined></v-text-field>
+        <div>
+          <v-btn icon color="primary">
+            <v-icon>mdi-emoticon-happy-outline</v-icon>
+          </v-btn>
+          <v-btn icon color="primary">
+            <v-icon>mdi-plus-circle-outline</v-icon>
+          </v-btn>
+        </div>
+      </div>
+      <div class="chat-btn-group">
+        <v-btn color="primary" fab large dark>
+          <v-icon>mdi-image</v-icon>
+        </v-btn>
+        <v-btn color="primary" fab large dark>
+          <v-icon>mdi-camera</v-icon>
+        </v-btn>
+        <v-btn color="primary" fab large dark>
+          <v-icon>mdi-folder</v-icon>
         </v-btn>
       </div>
     </v-footer>

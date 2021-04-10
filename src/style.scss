@@ -107,26 +107,44 @@
             bottom: 0;
             width: 100%;
             background-color: #fff;
-            display: flex;
-            padding: 10px;
-            justify-content: space-between;
-            box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
-            & > *:not(:last-child) {
-                padding: 0 10px;
+            .chat-field {
+                display: flex;
+                width: 100%;
+                padding: 10px;
+                justify-content: space-between;
+                box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+                & > *:not(:last-child) {
+                    padding: 0 10px;
+                }
+                .v-text-field--outlined > .v-input__control > .v-input__slot {
+                    border-radius: 30px;
+                    min-height: 36px;
+                    margin-bottom: 0;
+                }
+                .v-text-field__details {
+                    display: none;
+                }
             }
-            .v-text-field--outlined > .v-input__control > .v-input__slot {
-                border-radius: 30px;
-                min-height: 36px;
-                margin-bottom: 0;
-            }
-            .v-text-field__details {
-                display: none;
+            .chat-btn-group {
+                padding: 10px;
+                .v-btn {
+                    margin: 5px;
+                }
             }
         }
     }
     .user-msg-settings {
         .user-msg-settings-btn-group {
             padding: 15px 15px 0;
+            &.avatar-group {
+               .v-avatar {
+                   margin-top: 10px;
+                    margin-bottom: 10px;
+                    &:not(:last-child) {
+                        margin-right: 5%;
+                    }
+               }
+            }
         }
         .v-list-item__title {
             font-size: 16px;
@@ -151,6 +169,20 @@
     }
     .select-all-btn {
         margin-top: 20px;
+    }
+    .search-bar {
+        .v-text-field__details {
+            display: none;
+        }
+        .v-input__slot {
+            margin-bottom: 0;
+        }
+        .v-text-field--outlined > .v-input__control > .v-input__slot {
+            min-height: 36px;
+        }
+        .v-input__append-inner {
+            margin-top: 8px;
+        }
     }
 } 
 // #57DB28
