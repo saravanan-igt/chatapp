@@ -36,7 +36,7 @@
           </v-card>
         </v-col>
         <v-col cols="2" xs="2">
-          <v-avatar>
+          <v-avatar v-on:click="goToDetails()">
             <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
           </v-avatar>
         </v-col>
@@ -49,7 +49,7 @@
           </v-card>
         </v-col>
         <v-col cols="2" xs="2">
-          <v-avatar>
+          <v-avatar v-on:click="goToDetails()">
             <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
           </v-avatar>
         </v-col>
@@ -57,7 +57,7 @@
 
       <v-row no-gutter>
         <v-col cols="2" xs="2">
-          <v-avatar>
+          <v-avatar v-on:click="goToDetails()">
             <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
           </v-avatar>
         </v-col>
@@ -132,6 +132,9 @@ export default {
     },
     goBack() {
       this.$router.push("/");
+    },
+    goToDetails() {
+      this.$router.push("/userDetails");
     },
   },
 };

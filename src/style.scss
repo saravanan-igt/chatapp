@@ -124,5 +124,33 @@
             }
         }
     }
+    .user-msg-settings {
+        .user-msg-settings-btn-group {
+            padding: 15px 15px 0;
+        }
+        .v-list-item__title {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 2;
+        }
+        .v-divider.d-separator {
+            border-top-width: 8px;
+        }
+        
+        .staff-list-group {
+            .v-list-item__action {
+                margin-right: 10px;
+            }
+            .v-badge {
+                position: absolute;
+                left: 90px;
+                z-index: 1;
+                
+            }
+        }
+    }
+    .select-all-btn {
+        margin-top: 20px;
+    }
 } 
 // #57DB28
