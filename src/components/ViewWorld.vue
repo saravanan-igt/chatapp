@@ -1,7 +1,7 @@
 <template>
   <div class="chat-box">
     <v-app-bar app>
-      <v-btn icon v-on:click="goBack()">
+      <v-btn icon v-on:click="goBack()" color="#000000DE">
         <v-icon>mdi-chevron-left</v-icon>
       </v-btn>
       <v-spacer></v-spacer>
@@ -9,7 +9,7 @@
         <h2>A1</h2>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon>
+      <v-btn icon color="#000000DE">
         <v-icon>mdi-dots-horizontal</v-icon>
       </v-btn>
     </v-app-bar>
