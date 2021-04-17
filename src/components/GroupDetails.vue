@@ -6,37 +6,29 @@
       </v-btn>
       <v-spacer></v-spacer>
       <v-toolbar-title class="headline">
-        <h2>Details</h2>
+        <h2>Group Details</h2>
       </v-toolbar-title>
       <v-spacer></v-spacer>
     </v-app-bar>
     <div>
-      <div class="user-msg-settings-btn-group avatar-btn-group">
-        <div class="v-avatar-with-label">
-          <v-avatar size="42">
-            <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="A1" />
-          </v-avatar>
-          <span class="v-avatar-label">A1</span>
-        </div>
-        <v-btn outlined fab color="primary" small v-on:click="goToStaffList()">
-          <v-icon>mdi-plus</v-icon>
-        </v-btn>
-      </div>
-      <v-list flat>
-        <v-list-item>
-          <template>
-            <v-list-item-content>
-              <v-list-item-title>Search Chat History</v-list-item-title>
-            </v-list-item-content>
-            <v-list-item-action>
-              <v-btn icon>
-                <v-icon>mdi-chevron-right</v-icon>
-              </v-btn>
-            </v-list-item-action>
-          </template>
-        </v-list-item>
-        <v-divider class="d-separator"></v-divider>
+      <v-list>
+        <template v-for="(item, index) in items">
+          <v-list-item :key="index">
+            <v-list-item-avatar color="primary">
+              <v-icon dark> mdi-bell-outline </v-icon>
+            </v-list-item-avatar>
 
+            <v-list-item-content>
+              <v-list-item-title v-html="item.title"></v-list-item-title>
+              <v-list-item-subtitle
+                v-html="item.subtitle"
+              ></v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+        </template>
+      </v-list>
+      <v-list flat>
+        <v-divider class="d-separator"></v-divider>
         <v-list-item>
           <template>
             <v-list-item-content>
@@ -61,6 +53,9 @@
         </v-list-item>
         <v-divider></v-divider>
       </v-list>
+      <div class="ma-2">
+        <v-btn block outlined color="primary"> Clear Chat History </v-btn>
+      </div>
     </div>
   </div>
 </template>
@@ -84,6 +79,12 @@ export default {
       },
       { text: "Title", value: "title", align: "left" },
       { text: "Description", value: "body", align: "left" },
+    ],
+    items: [
+      {
+        title: "Jackpot",
+        subtitle: `ID23955`,
+      },
     ],
   }),
   mounted() {
@@ -110,7 +111,7 @@ export default {
         });
     },
     goBack() {
-      this.$router.push("/view");
+      this.$router.push("/groups");
     },
     goToStaffList() {
       this.$router.push("/staffList");

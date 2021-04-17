@@ -38,7 +38,7 @@
               <v-list-item-title>Group Name</v-list-item-title>
             </v-list-item-content>
             <v-list-item-action>
-              <v-btn icon>
+              <v-btn icon v-on:click="goToGroupDetails()">
                 <v-icon>mdi-chevron-right</v-icon>
               </v-btn>
             </v-list-item-action>
@@ -259,6 +259,9 @@ export default {
     },
     goToStaffList() {
       this.$router.push("/staffList");
+    },
+    goToGroupDetails() {
+      this.$router.push("/groupDetails");
     },
   },
 };

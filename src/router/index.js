@@ -6,6 +6,7 @@ import Details from '@/components/Details';
 import StaffList from '@/components/StaffList';
 import SearchChat from '@/components/SearchChat';
 import Groups from '@/components/Groups';
+import GroupDetails from '@/components/GroupDetails';
 
 Vue.use(Router);
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/groups',
       name: 'Groups',
       component: Groups
+    },
+    {
+      path: '/groupDetails',
+      name: 'GroupDetails',
+      component: GroupDetails
     },
     
   ]

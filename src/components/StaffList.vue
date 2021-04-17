@@ -27,7 +27,12 @@
           <v-list-item :key="'userlist' + i">
             <template v-slot:default="{ active }">
               <v-list-item-action>
-                <v-checkbox color="primary" :input-value="active"></v-checkbox>
+                <v-checkbox
+                  color="primary"
+                  off-icon=""
+                  on-icon="mdi-check"
+                  :input-value="active"
+                ></v-checkbox>
               </v-list-item-action>
               <v-badge
                 v-if="item.status"

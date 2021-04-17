@@ -43,28 +43,24 @@
       </v-row>
 
       <v-row no-gutter>
-        <v-col cols="10" xs="10">
-          <v-card outlined class="chat-bubble user-msg right-msg">
+        <v-col cols="12" xs="12">
+          <div class="chat-bubble user-msg right-msg">
             <p class="user-msg-text">Hello，please deal with this task.</p>
-          </v-card>
-        </v-col>
-        <v-col cols="2" xs="2">
-          <v-avatar v-on:click="goToDetails()">
-            <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
-          </v-avatar>
+            <v-avatar v-on:click="goToDetails()">
+              <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
+            </v-avatar>
+          </div>
         </v-col>
       </v-row>
 
       <v-row no-gutter>
-        <v-col cols="2" xs="2">
-          <v-avatar v-on:click="goToDetails()">
-            <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
-          </v-avatar>
-        </v-col>
-        <v-col cols="10" xs="10">
-          <v-card outlined class="chat-bubble user-msg left-msg">
-            <p class="user-msg-text">Hello，please deal with this task.</p>
-          </v-card>
+        <v-col cols="12" xs="12">
+          <div class="chat-bubble user-msg left-msg">
+            <p class="user-msg-text">Hello</p>
+            <v-avatar v-on:click="goToDetails()">
+              <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
+            </v-avatar>
+          </div>
         </v-col>
       </v-row>
     </v-container>
